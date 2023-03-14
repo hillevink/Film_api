@@ -22,3 +22,16 @@ section {
   flex-wrap: wrap;
   gap: 3rem;
 }
+
+article {
+  width: 30%;
+  height: 100%;
+}
+
+article h2 {
+  height: 20%;
+}
+
+article img {
+  min-width: 100%;
+}

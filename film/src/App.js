@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import FilmList from './components/FilmList';
+import Layout from './components/Layout';
 import Nav from './components/Nav';
 // import filmList from './data/filmList';
 
@@ -25,12 +26,12 @@ function App() {
   }, [searchValue])
 
   return (
-    <main>
+    <Layout>
       <Nav heading="Films" setSearchValue={setSearchValue} searchValue={searchValue} />
       <section>
         <FilmList films={films} />
       </section>
-    </main>
+    </Layout>
   );
 }
 
